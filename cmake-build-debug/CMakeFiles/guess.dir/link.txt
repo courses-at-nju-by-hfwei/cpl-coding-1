@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/guess.dir/0-intro/guess.c.o -o guess 
