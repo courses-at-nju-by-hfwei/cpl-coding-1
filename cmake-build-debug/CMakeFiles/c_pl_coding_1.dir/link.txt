@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/c_pl_coding_1.dir/hello.c.o -o c_pl_coding_1 
