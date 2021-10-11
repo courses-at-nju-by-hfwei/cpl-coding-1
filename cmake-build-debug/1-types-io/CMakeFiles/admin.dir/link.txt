@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/admin.dir/admin.c.o -o admin  -lm 
