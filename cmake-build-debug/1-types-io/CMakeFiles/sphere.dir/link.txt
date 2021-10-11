@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/sphere.dir/sphere.c.o -o sphere  -lm 

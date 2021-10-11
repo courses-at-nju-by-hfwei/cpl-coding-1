@@ -1,10 +1,7 @@
-add_executable(circle circle.c)
+cmake_minimum_required(VERSION 3.20)
+project(c_pl_coding_1 C)
 
-add_executable(sphere sphere.c)
-target_link_libraries(sphere m)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(mol mol.c)
-
-add_executable(admin admin.c)
-target_link_libraries(admin m)
-
+add_subdirectory(0-intro)
+add_subdirectory(1-types-io)
