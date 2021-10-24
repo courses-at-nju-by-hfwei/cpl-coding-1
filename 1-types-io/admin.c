@@ -38,21 +38,37 @@ int main() {
   double standard_deviation = sqrt((pow(c_score - mean, 2) + pow(music_score - mean, 2) + pow(medicine_score - mean, 2)) / 3.0);
   int rank = 10;
 
-/**
- * Basic output
- * Tayu Lo 	 M
- * 7-20-1954, Tuesday.
- * C = 40 	 Music = 100 	 Medicine = 80
- * Mean = 73.333333 	 SD = 24.944383 	 Top = 10
- */
+  /**
+   * Basic output
+   * Tayu Lo 	 M
+   * 7-20-1954, Tuesday.
+   * C = 40 	 Music = 100 	 Medicine = 80
+   * Mean = 73.333333 	 SD = 24.944383 	 Top = 10
+   */
+   printf("%s %s \t %c \n"
+          "%d-%d-%d, %s.\n"
+          "C = %d \t Music = %d \t Medicine = %d\n"
+          "Mean = %f \t SD = %f \t Top = %d\n",
+          first_name, last_name, gender,
+          birth_month, birth_day, birth_year, weekday,
+          c_score, music_score, medicine_score,
+          mean, standard_deviation, rank);
+
+  /**
+   * Expected output
+   * Tayu Lo 	 M
+   * 07-20-1954, Tue.
+   * C = 40 	 Music = 100 	 Medicine = 80
+   * Mean = 73.3 	 SD = 24.94 	 Top = 10%
+   */
   printf("%s %s \t %c \n"
-         "%.2d-%d-%d, %.3s.\n"
-         "C = %d \t Music = %d \t Medicine = %d\n"
-         "Mean = %.1f \t SD = %.2f \t Top = %d%%\n",
-         first_name, last_name, toupper(gender),
-         birth_month, birth_day, birth_year, weekday,
-         c_score, music_score, medicine_score,
-         mean, standard_deviation, rank);
+        "%.2d-%d-%d, %.3s.\n"
+        "C = %d \t Music = %d \t Medicine = %d\n"
+        "Mean = %.1f \t SD = %.2f \t Top = %d%%\n",
+        first_name, last_name, toupper(gender),
+        birth_month, birth_day, birth_year, weekday,
+        c_score, music_score, medicine_score,
+        mean, standard_deviation, rank);
 
   return 0;
 }

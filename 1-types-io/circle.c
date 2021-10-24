@@ -3,12 +3,16 @@
 //
 
 #include <stdio.h>
+
 int main() {
   /**
    * const: constant
    */
   const double PI = 3.14159;
   int radius = 10;
+
+  int count = scanf("%d", &radius);
+  printf("count = %d\n", count);
 
   double circumference = 0;
   /**
@@ -24,4 +28,3 @@ int main() {
 
   return 0;
 }
-
