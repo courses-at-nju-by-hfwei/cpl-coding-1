@@ -1,9 +1,10 @@
-# 3-loops
+# 3-for-a-while
 
 ## `for`
 - `stars.c`: `for`, double loops
 - `prime.c`: `break`
 - `primes.c`: double loops
+- `selection-sort.c`: double loops
 
 ## `while` and `do-while`
 - `palindrome.c`: `while`, comma expressions, `break`
