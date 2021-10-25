@@ -2,6 +2,7 @@
 add_executable(stars stars.c)       # double loops
 add_executable(prime prime.c)       # break
 add_executable(primes primes.c)     # double loops
+target_link_libraries(primes m)
 add_executable(selection-sort selection-sort.c) # while for reading inputs; double loops
 
 # loop: while and do-while

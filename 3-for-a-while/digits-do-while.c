@@ -15,6 +15,10 @@ int main() {
   /**
    * "do-while" version
    */
+  do {
+    number /= 10;
+    num_of_digits++;
+  } while (number > 0);
 
   printf("Number of digits is %d.\n", num_of_digits);
 

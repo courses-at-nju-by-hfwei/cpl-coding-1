@@ -29,23 +29,9 @@ H
 1-types-io/admin-scanf.c,d/2/d2efd5208e7870644cc77948e888516ddceb7128
 K
 1-types-io/scanf-examples.c,1/8/184432ebb699cef2c342ad822e3fbfc70d0b3ef8
-M
-3-for-a-while/binary-search.c,c/4/c419af5e061910acbc7fc199869ad3a6de72b4e6
 K
 3-for-a-while/counting-if.c,c/3/c308026a90d77c64e28389ad3727fb72a8d4be38
 O
 3-for-a-while/counting-switch.c,e/6/e6c58827380f93e0db1ddd285a1b7e96a2c32382
-O
-3-for-a-while/digits-do-while.c,2/3/234df46d8f655d7301c8b07177c3b8271dc0aec8
-L
-3-for-a-while/digits-while.c,3/a/3acd7ce3a825226814dc5e782b104406f0c4008f
-J
-3-for-a-while/palindrome.c,f/2/f29982d91abaaedce747306fa2210db36ebbb139
 E
 3-for-a-while/prime.c,c/8/c829a79fc942443fbc94376d448ce1888542d063
-F
-3-for-a-while/primes.c,5/5/5514beefe615ba6502b6d5f772005ae48e3a30e6
-N
-3-for-a-while/selection-sort.c,a/4/a43ac8a237aaab18738a11f9e9fee2b7f9d21915
-E
-3-for-a-while/stars.c,a/f/af10ec932f22a168e5b7b221e5a931afa5e4ec39

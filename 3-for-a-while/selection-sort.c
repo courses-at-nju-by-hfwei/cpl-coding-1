@@ -15,6 +15,7 @@
 int numbers[MAX] = {0};
 
 int main() {
+
   /**
    * Input the array
    * Note: fails to run this program in "Run" (Ctrl + D)
@@ -27,16 +28,18 @@ int main() {
   /**
    * Print it out
    */
+  printf("\n");
   for (int i = 0; i < len; i++) {
     printf("%d ", numbers[i]);
   }
   printf("\n");
 
-  printf("--------------------\n");
-  for (int i = 0; i < len; ++i) {
+  for (int i = 0; i < len; i++) {
+    /**
+     * find the minimum value among numbers[i] ... numbers[len -1]
+     */
     int min = numbers[i];
     int min_index = i;
-
     for (int j = i + 1; j < len; j++) {
       if (min > numbers[j]) {
         min = numbers[j];
@@ -44,24 +47,23 @@ int main() {
       }
     }
 
-    printf("min = %d \t min_index = %d\n", min, min_index);
-
     /**
      * swap numbers[i] and numbers[min_index]
      */
-    int tmp = numbers[i];
+    int tmp = 0;
+    tmp = numbers[i];
     numbers[i] = numbers[min_index];
     numbers[min_index] = tmp;
-
-    /**
-     * Print it out again
-     */
-    for (int i = 0; i < len; i++) {
-      printf("%d ", numbers[i]);
-    }
-    printf("\n");
-    printf("--------------------\n");
   }
+
+  /**
+   * Print it out again
+   */
+  printf("\n");
+  for (int i = 0; i < len; i++) {
+    printf("%d ", numbers[i]);
+  }
+  printf("\n");
 
   return 0;
 }
