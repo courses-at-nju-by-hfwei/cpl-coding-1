@@ -29,9 +29,9 @@ H
 1-types-io/admin-scanf.c,d/2/d2efd5208e7870644cc77948e888516ddceb7128
 K
 1-types-io/scanf-examples.c,1/8/184432ebb699cef2c342ad822e3fbfc70d0b3ef8
-K
-3-for-a-while/counting-if.c,c/3/c308026a90d77c64e28389ad3727fb72a8d4be38
 O
 3-for-a-while/counting-switch.c,e/6/e6c58827380f93e0db1ddd285a1b7e96a2c32382
 E
 3-for-a-while/prime.c,c/8/c829a79fc942443fbc94376d448ce1888542d063
+O
+3-for-a-while/digits-do-while.c,2/3/234df46d8f655d7301c8b07177c3b8271dc0aec8
