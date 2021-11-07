@@ -1215,8 +1215,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/4-loops/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="sum-func">
-				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/sum-func" prefix_auto="0" extension_auto="0"/>
+			<Target title="guess-func">
+				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/guess-func" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -1228,14 +1228,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 sum-func"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 guess-func"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="sum-func/fast">
-				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/sum-func" prefix_auto="0" extension_auto="0"/>
+			<Target title="guess-func/fast">
+				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/guess-func" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -1247,7 +1247,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 sum-func/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 guess-func/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1557,44 +1557,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="palindrome-func">
-				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/palindrome-func" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 palindrome-func"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="palindrome-func/fast">
-				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/palindrome-func" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 palindrome-func/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="merge-func">
 				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/merge-func" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function"/>
@@ -1628,6 +1590,44 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 merge-func/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="palindrome-func">
+				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/palindrome-func" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 palindrome-func"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="palindrome-func/fast">
+				<Option output="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/palindrome-func" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 palindrome-func/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/c-pl-class/c-pl-coding-1/cmake-build-debug/5-function/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1774,6 +1774,9 @@
 		<Unit filename="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/5-function/gcd.c">
 			<Option target="gcd-func"/>
 		</Unit>
+		<Unit filename="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/5-function/guess.c">
+			<Option target="guess-func"/>
+		</Unit>
 		<Unit filename="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/5-function/leap.c">
 			<Option target="leap-func"/>
 		</Unit>
@@ -1794,9 +1797,6 @@
 		</Unit>
 		<Unit filename="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/5-function/stars.c">
 			<Option target="stars-func"/>
-		</Unit>
-		<Unit filename="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/5-function/sum.c">
-			<Option target="sum-func"/>
 		</Unit>
 		<Unit filename="/home/hengxin/Documents/c-pl-class/c-pl-coding-1/5-function/swap.c">
 			<Option target="swap-func"/>
