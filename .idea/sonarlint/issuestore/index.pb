@@ -49,3 +49,15 @@ B
 4-loops/continue.c,a/5/a5022bae38ccfe3e69c659970a8e78f51b4e1f76
 E
 4-loops/counting-if.c,c/6/c63ee086ee74d4f25c73e0db9998de97261f131e
+F
+4-loops/game-of-life.c,c/8/c87c1536705fbacbfa02d96e2d38026e600ca2d9
+E
+4-loops/matrix-mult.c,e/5/e55736ebae90924cd46029ae977c186e9ba12e06
+?
+4-loops/merge.c,4/e/4e51e1bfa878cd816ecff955f6e1ded1d8405bf7
+I
+4-loops/counting-switch.c,9/e/9e2284df84ace9f5f71c4a4546441d2cafe0ef13
+@
+4-loops/common.c,9/a/9a70933e10b289cc269b7184f049856d93bd3e18
+E
+4-loops/bubble-sort.c,9/e/9ed15a6ed072f077e5801409ed485c19d1541abb
