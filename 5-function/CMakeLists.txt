@@ -13,4 +13,5 @@ add_executable(merge-func merge.c)
 add_executable(swap-func swap.c)
 add_executable(game-of-life-func game-of-life.c)
 
+add_executable(sum-func sum.c)
 add_executable(gcd-func gcd.c)
