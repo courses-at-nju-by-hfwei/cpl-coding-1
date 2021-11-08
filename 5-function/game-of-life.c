@@ -21,6 +21,9 @@ int board[SIZE][SIZE] = {
     {0},
     {0}};
 
+/**
+ * Cognitive Complexity
+ */
 int main() {
   /**
    * (extended) board
