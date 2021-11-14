@@ -67,3 +67,11 @@ E
 5-function/sum.c,c/f/cfb8c5cdcdaedfc5d1c095e6a04c26d2da656609
 A
 5-function/swap.c,6/f/6fc12dbaaf9080ba505fc16ef75bc980cd45d1eb
+K
+1-types-io/scanf-examples.c,1/8/184432ebb699cef2c342ad822e3fbfc70d0b3ef8
+B
+5-function/prime.c,4/4/447086be5b8697c3bd3dcb6cc98cb0df79d04d28
+A
+5-function/leap.c,b/2/b2a88239bae997ed462c1f7c0d60bfc0a7879b58
+B
+5-function/stars.c,e/8/e80bb9dd61dbc146818e26469ec6265dd8ad9e5e
