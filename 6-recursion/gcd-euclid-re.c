@@ -7,6 +7,10 @@
  * then gcd(a, b) = gcd(a - b, b)
  * else gcd(a, b) = gcd(a, b - a)
  *
+ * gcd(32, 42) = gcd(32, 10) = gcd(22, 10) = gcd(12, 10)
+ * = gcd(2, 10) = gcd(2, 8) = gcd(2, 6) = gcd(2, 4)
+ * = gcd(2, 2) = 2
+ *
  * Created by hengxin on 11/14/21.
  */
 
@@ -23,3 +27,16 @@ int main() {
 
   return 0;
 }
+
+int GCDEuclid(int a, int b) {
+  if (a == b) {
+    return a;
+  }
+
+  if (a > b) {
+    return GCDEuclid(a - b, b);
+  }
+
+  return GCDEuclid(a, b - a);
+}
+

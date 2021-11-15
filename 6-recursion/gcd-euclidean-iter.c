@@ -19,5 +19,10 @@ int main() {
 
   printf("gcd(%d, %d) = %d\n", a, b, GCD(a, b));
 
+  while (b != 0) {
+    int tmp = b;
+    b = a % b;
+    a = tmp;
+  }
   return 0;
 }

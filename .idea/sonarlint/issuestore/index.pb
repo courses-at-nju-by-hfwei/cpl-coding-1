@@ -75,3 +75,15 @@ A
 5-function/leap.c,b/2/b2a88239bae997ed462c1f7c0d60bfc0a7879b58
 B
 5-function/stars.c,e/8/e80bb9dd61dbc146818e26469ec6265dd8ad9e5e
+J
+5-function/binary-search.c,7/b/7b5786813c4da74478f6dbba39ecd7d41dd2b520
+B
+5-function/merge.c,7/0/70c29dbbfd62ec8c68e965e4c2a84f59fcc1cb3b
+K
+5-function/selection-sort.c,2/d/2da279a89c76fcd5897b20a40cd5bbbdf4e14237
+G
+5-function/palindrome.c,b/2/b2dfe802927213b290653df7fe89edffea3b4baf
+I
+5-function/game-of-life.c,5/6/560ef34181c2094b7b89c23edf60dfba2c9174ee
+H
+6-recursion/merge-sort.c,8/b/8b3a1a095f8118e59d6275ea8644f25707b35727
