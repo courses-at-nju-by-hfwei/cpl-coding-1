@@ -85,5 +85,3 @@ G
 5-function/palindrome.c,b/2/b2dfe802927213b290653df7fe89edffea3b4baf
 I
 5-function/game-of-life.c,5/6/560ef34181c2094b7b89c23edf60dfba2c9174ee
-H
-6-recursion/merge-sort.c,8/b/8b3a1a095f8118e59d6275ea8644f25707b35727
