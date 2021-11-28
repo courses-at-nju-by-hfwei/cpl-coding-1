@@ -77,8 +77,6 @@ B
 5-function/stars.c,e/8/e80bb9dd61dbc146818e26469ec6265dd8ad9e5e
 B
 5-function/merge.c,7/0/70c29dbbfd62ec8c68e965e4c2a84f59fcc1cb3b
-K
-5-function/selection-sort.c,2/d/2da279a89c76fcd5897b20a40cd5bbbdf4e14237
 G
 5-function/palindrome.c,b/2/b2dfe802927213b290653df7fe89edffea3b4baf
 I
