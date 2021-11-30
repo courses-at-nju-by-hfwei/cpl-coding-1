@@ -105,3 +105,9 @@ F
 7-data-types/compare.c,4/e/4ecf7db7b165554dc1240958862d62eaa405dbbb
 C
 7-data-types/sums.c,4/d/4df228a2e638f7cafd6f5b8632ded7d535c3e488
+H
+6-recursion/bsearch-re.c,7/9/79d3aeda919aaa2f55d10510964497619798728c
+H
+6-recursion/merge-sort.c,8/b/8b3a1a095f8118e59d6275ea8644f25707b35727
+C
+7-data-types/loop.c,9/b/9b5c68e2b77022f2f314ffc41a66fb37b40a24c6
