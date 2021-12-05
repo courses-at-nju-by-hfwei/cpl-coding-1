@@ -79,8 +79,6 @@ B
 5-function/merge.c,7/0/70c29dbbfd62ec8c68e965e4c2a84f59fcc1cb3b
 G
 5-function/palindrome.c,b/2/b2dfe802927213b290653df7fe89edffea3b4baf
-I
-5-function/game-of-life.c,5/6/560ef34181c2094b7b89c23edf60dfba2c9174ee
 D
 6-recursion/min-re.c,4/b/4b3646efb96a76ffae1d72a85f182019c6bb5900
 D
@@ -111,3 +109,7 @@ H
 6-recursion/merge-sort.c,8/b/8b3a1a095f8118e59d6275ea8644f25707b35727
 C
 7-data-types/loop.c,9/b/9b5c68e2b77022f2f314ffc41a66fb37b40a24c6
+K
+5-function/selection-sort.c,2/d/2da279a89c76fcd5897b20a40cd5bbbdf4e14237
+B
+8-pointer/strlen.c,7/c/7cf7de3400768bddd39691697d58bb5371fef885

@@ -1,11 +1,7 @@
 /**
- * file: game-of-life.c
+ * file: game-of-life-pointer.c
  *
- * Simulate "Conway's Game of Life"
- * See https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
- * Play with it: https://playgameoflife.com/
- *
- * Created by hengxin on 10/30/21.
+ * Created by hengxin on 12/5/21.
  */
 
 #include <stdio.h>
