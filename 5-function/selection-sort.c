@@ -51,7 +51,7 @@ void SelectionSort(int arr[], int len) {
     arr[min_index] = tmp;
     // actual argument
     // pass by value
-//    Swap(arr[i], arr[min_index]);
+//    SwapWrong(arr[i], arr[min_index]);
   }
 }
 

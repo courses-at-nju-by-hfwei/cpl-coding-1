@@ -9,7 +9,8 @@
 #define LEN 10
 
 void SelectionSort(char *str[], int len);
-void Swap(char *left, char *right);
+void SwapWrong(char *left, char *right);
+void Swap(char **left, char **right);
 void PrintStrs(const char *str[], int len);
 
 int main() {
@@ -45,12 +46,18 @@ void SelectionSort(char *str[], int len) {
       }
     }
 
-    Swap(str[i], str[min_index]);
+    Swap(&str[i], &str[min_index]);
   }
 }
 
-void Swap(char *left, char *right) {
+void SwapWrong(char *left, char *right) {
   char tmp = *left;
+  *left = *right;
+  *right = tmp;
+}
+
+void Swap(char **left, char **right) {
+  char *tmp = *left;
   *left = *right;
   *right = tmp;
 }

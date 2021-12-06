@@ -113,3 +113,9 @@ K
 5-function/selection-sort.c,2/d/2da279a89c76fcd5897b20a40cd5bbbdf4e14237
 B
 8-pointer/strlen.c,7/c/7cf7de3400768bddd39691697d58bb5371fef885
+I
+5-function/game-of-life.c,5/6/560ef34181c2094b7b89c23edf60dfba2c9174ee
+J
+8-pointer/selection-sort.c,0/8/08363ca627256fde896bffff85f9f5f945b38150
+U
+%9-pointer-more/game-of-life-pointer.c,1/3/132fb6b70d20e09ed1b8068c3789316b8b7dae07
