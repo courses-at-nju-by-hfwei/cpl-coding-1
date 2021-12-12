@@ -119,3 +119,13 @@ J
 8-pointer/selection-sort.c,0/8/08363ca627256fde896bffff85f9f5f945b38150
 U
 %9-pointer-more/game-of-life-pointer.c,1/3/132fb6b70d20e09ed1b8068c3789316b8b7dae07
+G
+9-pointer-more/strlen.c,a/f/af7c0880dd32f927d550adabbbee602b2efdb38f
+G
+9-pointer-more/strcpy.c,2/5/251b52da50bf59799fa7680cd5ef7925139a425a
+G
+9-pointer-more/strcmp.c,f/f/ff5d63d24437c09bae95f064bb6f7c0013c49d5b
+N
+9-pointer-more/array-pointer.c,1/7/179c8c5ab4a6bdc4efdf0899b27c47254fcaf9f4
+W
+'9-pointer-more/selection-sort-strings.c,7/e/7e96e27ff1d73f320f2f56c2e21da9fdcb8bfd15
