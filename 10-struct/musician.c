@@ -42,6 +42,8 @@ int main() {
       .java_score = 10,
       .python_score = 20
   };
+
+  PrintMusician(&luo);
 }
 
 void PrintMusician(Musician *m) {
