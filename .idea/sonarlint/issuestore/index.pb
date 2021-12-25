@@ -135,3 +135,7 @@ E
 10-struct/echo-flag.c,4/b/4b858888ff490050a338a53677b824e5047be6b1
 @
 10-struct/sort.c,0/1/014ef5988d8179d6f951668fa12e84ead4caafe1
+@
+10-struct/decl.c,c/4/c476983d5320d331d13cc3f657c6253038c0dca0
+D
+10-struct/musician.c,f/e/fe81e210f9a700d445ee878ab406e60f276c210a

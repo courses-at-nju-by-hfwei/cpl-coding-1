@@ -52,6 +52,7 @@ void Delete(LinkedList *list, Node *prev) {
   if (cur == prev) {
     list->head = NULL;
     list->tail = NULL;
+    free(cur);  // added after class
     return; // added after class
   }
 
