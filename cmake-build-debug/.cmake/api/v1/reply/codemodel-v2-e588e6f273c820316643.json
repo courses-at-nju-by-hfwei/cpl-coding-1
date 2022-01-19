@@ -19,7 +19,8 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -270,6 +271,24 @@
 					[
 						33
 					]
+				},
+				{
+					"build" : "12-networking",
+					"jsonFile" : "directory-12-networking-Debug-d16bf2cbb0b150c9002b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "12-networking",
+					"targetIndexes" : 
+					[
+						74,
+						75,
+						76,
+						77
+					]
 				}
 			],
 			"name" : "Debug",
@@ -290,7 +309,8 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13
 					],
 					"name" : "c_pl_coding_1",
 					"targetIndexes" : 
@@ -368,7 +388,11 @@
 						70,
 						71,
 						72,
-						73
+						73,
+						74,
+						75,
+						76,
+						77
 					]
 				}
 			],
@@ -890,6 +914,34 @@
 					"id" : "swap-func::@18b7eb9d20db78c69f22",
 					"jsonFile" : "target-swap-func-Debug-c9838f932f16216e2505.json",
 					"name" : "swap-func",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "uc-client::@727dfa46858022094c12",
+					"jsonFile" : "target-uc-client-Debug-86df3b5651119e95d5dd.json",
+					"name" : "uc-client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "uc-client-select::@727dfa46858022094c12",
+					"jsonFile" : "target-uc-client-select-Debug-83493ebccb2b154ada2b.json",
+					"name" : "uc-client-select",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "uc-server::@727dfa46858022094c12",
+					"jsonFile" : "target-uc-server-Debug-facf3c77922b09748a79.json",
+					"name" : "uc-server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "uc-server-select::@727dfa46858022094c12",
+					"jsonFile" : "target-uc-server-select-Debug-b65de03b561d0ba182a6.json",
+					"name" : "uc-server-select",
 					"projectIndex" : 0
 				}
 			]
