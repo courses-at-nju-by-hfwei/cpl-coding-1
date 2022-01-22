@@ -66,6 +66,8 @@ int main() {
 
   /**
    * fds: the set of sockets to monitor using select()
+   * fd: file descriptor
+   * In Unix-like systems, stdin, sockets, and files have file descriptors.
    */
   fd_set fds;
   FD_ZERO(&fds);
@@ -121,15 +123,15 @@ int main() {
           } else {
             printf("Received %d bytes: %.*s\n",
                    bytes_received, bytes_received, text);
-          }
 
-          for (int j = 0; j < bytes_received; j++) {
-            text[j] = (char) toupper(text[j]);
-          }
-          int bytes_sent = (int) send(i, text, bytes_received, 0);
-          if (bytes_sent > 0) {
-            printf("Send %d bytes: %.*s\n",
-                   bytes_sent, bytes_sent, text);
+            for (int j = 0; j < bytes_received; j++) {
+              text[j] = (char) toupper(text[j]);
+            }
+            int bytes_sent = (int) send(i, text, bytes_received, 0);
+            if (bytes_sent > 0) {
+              printf("Send %d bytes: %.*s\n",
+                     bytes_sent, bytes_sent, text);
+            }
           }
         }
       }

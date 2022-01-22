@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
   fd_set fds;
   FD_ZERO(&fds);
   FD_SET(socket_server, &fds); // watch socket_server to see when there is data
-  FD_SET(fileno(stdin), &fds); // watch stdin to see when it has input
+  FD_SET(STDIN_FILENO, &fds); // watch stdin to see when it has input
 
   while (1) {
     fd_set read_fds = fds;
@@ -72,7 +72,7 @@ int main(int argc, char *argv[]) {
     }
 
     // stdin has input to send to the server
-    if (FD_ISSET(fileno(stdin), &read_fds)) {
+    if (FD_ISSET(STDIN_FILENO, &read_fds)) {
       char input[BUFFER_SIZE];
       // fgets() gets a newline-terminated string
       if (! fgets(input, BUFFER_SIZE, stdin))
