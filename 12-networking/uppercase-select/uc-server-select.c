@@ -11,6 +11,9 @@
 #include <unistd.h>
 #include <ctype.h>
 
+#define QUEUE_SIZE 32
+#define BUFFER_SIZE 1024
+
 int main() {
   const char *NAME = NULL;
   const char *SERVICE = "8080";
@@ -56,11 +59,14 @@ int main() {
    * start listening for connections
    */
   printf("Starting listening ...\n");
-  if (listen(socket_listen, 10) < 0) {
+  if (listen(socket_listen, QUEUE_SIZE) < 0) {
     fprintf(stderr, "listen() failed.\n");
     exit(EXIT_FAILURE);
   }
 
+  /**
+   * fds: the set of sockets to monitor using select()
+   */
   fd_set fds;
   FD_ZERO(&fds);
   FD_SET(socket_listen, &fds);
@@ -69,18 +75,20 @@ int main() {
   printf("Waiting for connection ...\n");
 
   while (1) {
-    fd_set reads;
-    reads = fds;
-    if (select(max_socket + 1, &reads, 0, 0, 0) < 0) {
+    // you should make a copy of fds, since select() will modify its parameters
+    fd_set reads = fds;
+    if (select(max_socket + 1, &reads, NULL, NULL, NULL) < 0) {
       fprintf(stderr, "select() failed\n");
-      exit(EXIT_FAILURE);
+      break;
     }
 
     for (int i = 1; i <= max_socket; i++) {
       if (FD_ISSET(i, &reads)) {
-        if (i == socket_listen) {
+        if (i == socket_listen) { // a new connection comes in
           struct sockaddr_storage client_addr;
           socklen_t  client_len = sizeof(client_addr);
+
+          // accept() fills client_addr with the client's address info
           int socket_client = accept(socket_listen,
                                      (struct sockaddr *) &client_addr,
                                      &client_len);
@@ -89,11 +97,13 @@ int main() {
             exit(EXIT_FAILURE);
           }
 
+          // monitor the new connection with subsequent calls to select()
           FD_SET(socket_client, &fds);
           if (socket_client > max_socket) {
             max_socket = socket_client;
           }
 
+          // get the client's address using getnameinfo()
           char address_buffer[100];
           char service_buffer[100];
           getnameinfo((struct sockaddr *) &client_addr, client_len,
@@ -101,19 +111,26 @@ int main() {
               service_buffer, sizeof service_buffer,
               NI_NUMERICHOST);
           printf("New connection from %s:%s\n", address_buffer, service_buffer);
-        } else {
-          char read[1024];
-          int bytes_received = recv(i, read, 1024, 0);
-          if (bytes_received < 1) {
+        } else {  // there is data available to be read with recv() on socket i
+          char text[BUFFER_SIZE];
+          int bytes_received = (int) recv(i, text, BUFFER_SIZE, 0);
+          if (bytes_received < 1) { // the client has disconnected
             FD_CLR(i, &fds);
             close(i);
             continue;
+          } else {
+            printf("Received %d bytes: %.*s\n",
+                   bytes_received, bytes_received, text);
           }
 
           for (int j = 0; j < bytes_received; j++) {
-            read[j] = toupper(read[j]);
+            text[j] = (char) toupper(text[j]);
           }
-          send(i, read, bytes_received, 0);
+          int bytes_sent = (int) send(i, text, bytes_received, 0);
+          if (bytes_sent > 0) {
+            printf("Send %d bytes: %.*s\n",
+                   bytes_sent, bytes_sent, text);
+          }
         }
       }
     }

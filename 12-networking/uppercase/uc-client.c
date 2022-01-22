@@ -45,14 +45,13 @@ int main(int argc, char *argv[]) {
   printf("Now send a text message to the server.\n");
   const char *text = "hello C network programming";
   int bytes_sent = send(socket_server, text, strlen(text), 0);
-  if (bytes_sent == -1) {
+  if (bytes_sent == -1) { // the socket has closed
     fprintf(stderr, "send() failed\n");
     exit(EXIT_FAILURE);
   }
   printf("Send %d bytes\n", bytes_sent);
 
-  // close the socket
-//  close(socket_server);
+  close(socket_server);
 
   return 0;
 }

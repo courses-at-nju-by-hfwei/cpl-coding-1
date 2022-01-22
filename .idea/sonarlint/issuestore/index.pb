@@ -139,3 +139,11 @@ E
 10-struct/decl.c,c/4/c476983d5320d331d13cc3f657c6253038c0dca0
 D
 10-struct/musician.c,f/e/fe81e210f9a700d445ee878ab406e60f276c210a
+H
+11-linkedlist/josephus.c,2/d/2d6096eebcc8c0fe2f85d5d50caca4fc890d061c
+E
+11-linkedlist/ll/ll.h,5/d/5de610586fe11ce7c4f1178b3e3c2aebcbf7860b
+E
+11-linkedlist/ll/ll.c,f/6/f622f9e905acf6d130d943ba56444bfd8f3862a9
+S
+#12-networking/uppercase/uc-server.c,2/4/243a4e13c6cf2ac9770724a4e8ea9db3f457fbd7

@@ -10,6 +10,8 @@
 #include <string.h>
 #include <unistd.h>
 
+#define BUFFER_SIZE 1024
+
 int main(int argc, char *argv[]) {
   if (argc < 3) {
     fprintf(stderr, "Usage: time-client hostname port\n");
@@ -27,6 +29,7 @@ int main(int argc, char *argv[]) {
     exit(EXIT_FAILURE);
   }
 
+  // get the server's address info
   char address_buffer[100];
   char service_buffer[100];
   getnameinfo(server_addr->ai_addr, server_addr->ai_addrlen,
@@ -53,6 +56,9 @@ int main(int argc, char *argv[]) {
 
   printf("Connected\n");
 
+  /**
+   * We monitor socket_server and stdin using select()
+   */
   fd_set fds;
   FD_ZERO(&fds);
   FD_SET(socket_server, &fds); // watch socket_server to see when there is data
@@ -62,45 +68,44 @@ int main(int argc, char *argv[]) {
     fd_set read_fds = fds;
     if (select(socket_server + 1, &read_fds, NULL, NULL, NULL) == -1) {
       fprintf(stderr, "select() failed\n");
-      exit(EXIT_FAILURE);
+      break;
     }
 
     // stdin has input to send to the server
     if (FD_ISSET(fileno(stdin), &read_fds)) {
-      char read[4096];
-      if (!fgets(read, 4096, stdin))
+      char input[BUFFER_SIZE];
+      // fgets() gets a newline-terminated string
+      if (! fgets(input, BUFFER_SIZE, stdin))
         break;
-      printf("Sending: %s", read);
-      int bytes_sent = send(socket_server, read, strlen(read), 0);
-      if (bytes_sent == -1) {
-        fprintf(stderr, "send() failed\n");
-        break;
+      int bytes_sent = (int) send(socket_server, input, strlen(input), 0);
+      if (bytes_sent > 0) {
+        printf("Send %d bytes: %.*s\n",
+               bytes_sent, bytes_sent, input);
       }
-      printf("Send %d bytes.\n", bytes_sent);
+      // If the socket has closed, send() returns -1
+      // A closed socket causes select() to return immediately,
+      // and we notice the closed socket on the next call to recv()
     }
 
+    // socket_server has data to receive
     if (FD_ISSET(socket_server, &read_fds)) {
-      char read[4096];
-      int bytes_received = recv(socket_server, read, 4096, 0);
+      char data[BUFFER_SIZE];
+      int bytes_received = (int) recv(socket_server, data, BUFFER_SIZE, 0);
       if (bytes_received == -1) {
         fprintf(stderr, "recv() failed\n");
         break;
       } else if (bytes_received == 0) {
-        printf(stderr, "The peer has been shutdown.\n");
-        close(socket_server);
-        socket_server = -1;
-        FD_CLR(socket_server, &fds);
+        printf("The peer has been shutdown.\n");
+        break;
       } else {
         printf("Received %d bytes: %.*s",
-               bytes_received, bytes_received, read);
+               bytes_received, bytes_received, data);
       }
     }
   }
 
   printf("Closing socket ...\n");
-  if (socket_server != -1) {
-    close(socket_server);
-  }
+  close(socket_server);
 
   printf("Finished\n");
 
